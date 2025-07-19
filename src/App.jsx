@@ -1,3 +1,4 @@
+import StarsBackground from "./components/StarsBackground";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState } from 'react';
 import "./index.css";
@@ -14,6 +15,7 @@ import { AnimatePresence } from 'framer-motion';
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
   return (
     <>
+      <StarsBackground />
       <AnimatePresence mode="wait">
         {showWelcome && (
           <WelcomeScreen onLoadingComplete={() => setShowWelcome(false)} />

@@ -1,0 +1,14 @@
+.stars-bg {
+  background: #000 url("https://raw.githubusercontent.com/kgnfth/space-bg/main/bg-stars.png") repeat;
+  background-size: cover;
+  animation: moveStars 100s linear infinite;
+}
+
+@keyframes moveStars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 10000px;
+  }
+}
